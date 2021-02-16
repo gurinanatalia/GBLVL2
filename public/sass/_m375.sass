@@ -1,0 +1,175 @@
+@media ( max-width: 667px )
+    .drop
+        width: 100%
+
+    .center
+        padding-left: 16px
+        padding-right: 16px
+
+    .header
+        &__box
+            display: none
+            &_nav
+                display: flex
+                justify-content: space-around
+                align-items: center
+                padding: 0 16px 16px
+        &__icon
+            &_nav
+                color: $colorBackground
+                margin-right: 0
+
+    .promo
+        &__img
+            display: none
+        &__left
+            width: 0
+        &__right
+            width: 100%
+            height: 363px
+        &__heading
+            font-size: 38px
+            line-height: 46px
+        &__text
+            font-size: 20px
+            line-height: 24px
+
+    .vertical_line
+        height: 61px
+
+    .catalog
+        flex-direction: column
+        margin-top: 64px
+        gap: 0
+
+        &__item
+            margin-bottom: 32px
+            &:not(:last-child)
+                margin-right: 0px
+
+        &-big
+            margin-top: 0
+            margin-left: 16px
+            margin-right: 16px
+            height: 111px
+            background-image: url(../img/catalog_big.png)
+            background-size: cover
+            background-position: center
+            &__image
+                display: none
+
+    .product
+        width: 100%
+        &-box__heading
+            margin-top: 64px
+
+    .footer
+        &__top
+            padding-top: 48px
+            padding-bottom: 33px
+        &__middle
+            background-size: cover
+            background-position: left
+            &__left
+                padding-bottom: 59px
+                &__text
+                    font-size: 18px
+                    line-height: 22px
+        &__bottom
+            flex-direction: column-reverse
+            padding-top: 43px
+            padding-bottom: 8px
+            height: 143px
+
+    .subscribe
+        padding-bottom: 109px
+        &__heading
+            font-size: 24px
+            line-height: 37px
+        &__text
+            font-size: 14px
+            line-height: 22px
+
+    .social-media
+        margin-bottom: 48px
+
+    .catalog
+        &__top
+            flex-direction: column
+            padding-top: 24px
+            padding-bottom: 46px
+        &-filter
+            margin-top: 26px
+
+    .filter
+        &__text
+            display: none
+        &__svg_mobile
+            display: block
+        &__parameters
+            gap: 8px
+            &__item
+                font-size: 12px
+                line-height: 14px
+
+    .collection
+        &__img
+            width: 75%
+        &__text
+            width: 326px
+
+    .catalog
+        &__top
+            padding: 0
+            +centerFlex()
+
+    .shopping-cart
+        margin-top: 39px
+        margin-bottom: 96px
+        gap: 48px
+        &__product
+            margin-bottom: 32px
+            min-height: 188px
+        &__img
+            width: 37%
+            height: auto
+        &__right
+            flex-direction: column
+            gap: 48px
+        &__button
+            font-size: 12px
+            line-height: 14px
+            padding: 8px 18px
+        &__options
+            gap: 8px
+            margin-top: 0
+        &__content
+            padding: 14px 17px
+        &__heading
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 26px
+            width: 143px
+        &__feature
+            font-size: 14px
+            line-height: 17px
+
+    .exit
+        width: 9px
+        height: 9px
+        right: 17px
+        top: 12px
+
+    .shipping-address
+        width: 100%
+
+    .order-details
+        width: 100%
+
+    .registration
+        flex-direction: column
+        gap: 40px
+        &__form
+            width: 100%
+    .loyalty
+        width: 100%

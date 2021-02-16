@@ -1,0 +1,82 @@
+.registration
+    display: flex
+    gap: 128px
+    margin-top: 64px
+    margin-bottom: 96px
+
+    &__form
+        flex-grow: 4
+        display: flex
+        flex-direction: column
+
+    &__heading
+        font-weight: 300
+        +font(16px, $colorBackground, 19px)
+        margin-bottom: 10px
+
+    &__input
+        border: 1px solid #A4A4A4
+        font-weight: 300
+        +font(13px, #000000, 16px)
+        padding: 12px 16px
+        outline: none
+        margin: 10px 0px
+        font-family: inherit
+
+    &__text
+        +font(11px, #000000, 13px)
+
+    &__radio
+        display: flex
+        align-items: center
+        margin-top: 23px
+        margin-bottom: 23px
+        gap: 8px
+
+    &__text_pass
+        +font(13px,#B1B1B1, 16px)
+        font-weight: 300
+        margin-top: 5px
+        margin-bottom: 39px
+
+    &__button
+        +font(14px,  #FFFFFF, 17px)
+        width: 167px
+        padding-top: 16px
+        padding-bottom: 16px
+        padding-left: 29px
+        display: flex
+        gap: 20px
+        background: $colorSelect
+        color: #FFFFFF
+        transition: background .3s
+        outline: none
+        border: none
+
+        &:hover
+            background: $colorSelect - #111
+
+.loyalty
+    flex-grow: 7
+
+    &__heading
+        width: 265px
+        +font(24px, #000000, 29px)
+        font-weight: 300
+
+    &__text
+        width: 652px
+        +font(24px, #000000, 29px)
+        font-weight: 300
+        margin-top: 22px
+        margin-bottom: 22px
+
+    &__ul
+        list-style-type: none
+
+    &__list
+        +font(24px, #000000, 29px)
+        font-weight: 300
+        margin-top: 16px
+        margin-bottom: 16px
+        list-style-position: inside

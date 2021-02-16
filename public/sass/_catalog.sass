@@ -1,0 +1,156 @@
+.catalog__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #F8F3F4
+    height: 148px
+    margin-bottom: 35px
+
+    &__heading
+        font-size: 24px
+        line-height: 29px
+        color: $colorSelect
+        animation: vibrate-1 .3s linear 3 both
+
+    &__nav
+        display: flex
+
+    &__link
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        transition: color .3s
+
+    &__link:hover
+        color: $colorSelect
+
+    &__link:last-child
+        color: $colorSelect
+        font-weight: 700
+
+    &__link:not(:last-child)::after
+        content: '/'
+        padding-left: 8px
+        padding-right: 8px
+
+.catalog-filter
+    margin-top: 51px
+    display: flex
+    position: relative
+
+.filter
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    position: absolute
+    padding-left: 8px
+    transition: filter .3s
+
+    &_active:hover
+        width: 360px
+        background-color: #fff
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        padding: 16px
+        z-index: 1
+        position: absolute
+        top: -16px
+
+    &__text
+        transition: color .3s
+
+    &_active:hover .filter__text
+        color: $colorSelect
+
+    &__items
+        display: block
+        opacity: 0%
+        transition: opacity .3s
+
+    &__details
+        margin-top: 16px
+        margin-bottom: 16px
+
+    &__summary
+        color: $colorSelect
+        &:hover
+            text-decoration: underline
+
+    &_active:hover .filter__items
+        opacity: 100%
+
+    &__svg path
+        transition: fill .3s
+        &_mobile
+            display: none
+
+    &_active:hover .filter__svg path
+        fill: $colorSelect
+
+    &__link:not(:last-child)
+        display: block
+        margin-bottom: 11px
+
+.details__open
+    position: relative
+
+.size__items
+    display: flex
+    flex-direction: column
+    padding: 8px 30px 8px 8px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    z-index: 1
+    position: absolute
+    margin-top: 5px
+    width: 79px
+
+.filter__text,
+.filter__link,
+.size__items
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+.filter__text:hover,
+.filter__summary:hover,
+.filter__link:hover,
+.filter__parameters__item:hover
+    color: $colorSelect
+
+summary:focus
+    outline: 0
+
+.filter__ul
+    list-style-type: none
+    padding-top: 24px
+    padding-bottom: 24px
+
+.filter__parameters
+    margin-left: calc(33.33333% + 15px)
+    display: flex
+    gap: 30px
+
+    &__item
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        list-style-type: none
+        transition: color .3s
+
+summary::-webkit-details-marker
+    display: none
+
+.pagination
+    margin-top: 48px
+    margin-bottom: 96px
+    border: 1px solid #EBEBEB
+    padding: 12px 16px
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #5D5D5D
+    width: 282px
+    align-self: center
+    display: flex
+    justify-content: space-between

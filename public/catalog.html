@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header class="header center">
         <div class="header__left">
             <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
@@ -63,55 +64,80 @@
             </div>
         </div>
     </header>
-    <section class="promo">
-        <div class="promo__left">
-            <img class="promo__img" src="img/promo__img.png" alt="promo">
-        </div>
-        <div class="promo__right">
-            <div class="vertical_line"></div>
-            <div class="promo__content">
-                <h1 class="promo__heading">THE BRAND</h1>
-                <p class="promo__text">OF
-                    LUXERIOUS <span class="selected">FASHION</span></p>
-            </div>
 
-        </div>
+    <section class="catalog__top center">
+        <h2 class="catalog__top__heading">NEW ARRIVALS </h2>
+        <nav class="catalog__top__nav">
+            <a href="index.html" class="catalog__top__link">HOME</a>
+            <a href="catalog.html" class="catalog__top__link">MEN</a>
+            <a href="#" class="catalog__top__link">NEW ARRIVALS</a>
+        </nav>
     </section>
-    <section class="catalog-box">
-        <div class="catalog center">
-            <div class="catalog__item">
-                <img class="catalog__img" src="img/catalog__img1.png" alt="catalog image 1">
-                <div class="catalog__content">
-                    <p class="catalog__text">30% OFF</p>
-                    <h3 class="catalog__heading selected">FOR WOMEN</h3>
-                </div>
-            </div>
-            <div class="catalog__item">
-                <img class="catalog__img" src="img/catalog__img2.png" alt="catalog image 1">
-                <div class="catalog__content">
-                    <p class="catalog__text">HOT DEAL</p>
-                    <h3 class="catalog__heading selected">FOR MEN</h3>
-                </div>
-            </div>
-            <div class="catalog__item">
-                <img class="catalog__img" src="img/catalog__img3.png" alt="catalog image 3">
-                <div class="catalog__content">
-                    <p class="catalog__text">NEW ARRIVALS</p>
-                    <h3 class="catalog__heading selected">FOR KIDS</h3>
-                </div>
+
+    <div class="catalog-filter center">
+        <div class="filter filter_active">
+            <span class="filter__text">
+                FILTER <svg class="filter__svg" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                        fill="#6F6E6E" />
+                </svg>
+            </span>
+            <svg class="filter__svg_mobile" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                        fill="#6F6E6E" />
+                </svg>
+            <div class="filter__items">
+                <details class="filter__details" open>
+                    <summary class="filter__summary">CATEGORY</summary>
+                    <ul class="filter__ul">
+                        <li><a class="filter__link" href="#">Accessories</a></li>
+                        <li><a class="filter__link" href="#">Bags</a></li>
+                        <li><a class="filter__link" href="#">Denim</a></li>
+                        <li><a class="filter__link" href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a class="filter__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="filter__link" href="#">Polos</a></li>
+                        <li><a class="filter__link" href="#">Shirts</a></li>
+                        <li><a class="filter__link" href="#">Shoes</a></li>
+                        <li><a class="filter__link" href="#">Sweaters & Knits</a></li>
+                        <li><a class="filter__link" href="#">T-Shirts</a></li>
+                        <li><a class="filter__link" href="#">Tanks</a></li>
+                    </ul>
+                </details>
+                <details class="filter__details">
+                    <summary class="filter__summary">BRAND</summary>
+                </details>
+                <details class="filter__details">
+                    <summary class="filter__summary">DESIGNER</summary>
+                </details>
             </div>
         </div>
-        <div class="catalog-big center">
-            <img class="catalog-big__image" src="img/catalog_big.png" alt="catalog big image">
-            <div class="catalog-big__content">
-                <p class="catalog-big__text">LUXIROUS & TRENDY</p>
-                <h3 class="catalog-big__heading selected">ACCESORIES</h3>
-            </div>
+        <div class="filter__parameters">
+            <details>
+                <summary class="filter__parameters__item">TRENDING NOW <img class="filter__parameters__img"
+                        src="img/parameters.svg" alt="parameters"></summary>
+            </details>
+            <details class="details__open" open>
+                <summary class="filter__parameters__item">SIZE <img class="filter__parameters__img"
+                        src="img/parameters.svg" alt="parameters"></summary>
+                <div class="size__items">
+                    <label><input type="checkbox" class="filter__parameters__checkbox"> S</label>
+                    <label><input type="checkbox" class="filter__parameters__checkbox"> M</label>
+                    <label><input type="checkbox" class="filter__parameters__checkbox"> L</label>
+                    <label><input type="checkbox" class="filter__parameters__checkbox"> XL</label>
+                </div>
+            </details>
+            <details>
+                <summary class="filter__parameters__item">PRICE <img class=" filter__parameters__img"
+                        src="img/parameters.svg" alt="parameters"></summary>
+            </details>
         </div>
-    </section>
+    </div>
+
     <section class="product-box center">
-        <h2 class="product-box__heading">Featured Items</h2>
-        <div class="product-box__text">Shop for items based on what we featured in this week</div>
         <div class="product-content">
             <div class="product product_mb">
                 <a href="product.html"><img src="img/products__img1.jpg" alt="photo product" class="product__img"></a>
@@ -124,7 +150,7 @@
                 </div>
             </div>
             <div class="product product_mb">
-                <a href="product.html"><img src="img/products__img2.jpg" alt="photo product" class="product__img"></a>
+                <a href="product.html"><img src="img/catalog__img2.jpg" alt="photo product" class="product__img"></a>
                 <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
                 <div class="product__info">
                     <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
@@ -134,7 +160,7 @@
                 </div>
             </div>
             <div class="product product_mb">
-                <a href="product.html"><img src="img/products__img3.jpg" alt="photo product" class="product__img"></a>
+                <a href="product.html"><img src="img/catalog__img3.jpg" alt="photo product" class="product__img"></a>
                 <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
                 <div class="product__info">
                     <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
@@ -154,7 +180,7 @@
                 </div>
             </div>
             <div class="product product_mb">
-                <a href="product.html"><img src="img/products__img5.jpg" alt="photo product" class="product__img"></a>
+                <a href="product.html"><img src="img/catalog__img5.jpg" alt="photo product" class="product__img"></a>
                 <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
                 <div class="product__info">
                     <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
@@ -164,7 +190,37 @@
                 </div>
             </div>
             <div class="product product_mb">
-                <a href="product.html"><img src="img/products__img6.jpg" alt="photo product" class="product__img"></a>
+                <a href="product.html"><img src="img/catalog__img6.jpg" alt="photo product" class="product__img"></a>
+                <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
+                <div class="product__info">
+                    <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <div class="product__price">$52.00</div>
+                </div>
+            </div>
+            <div class="product product_mb">
+                <a href="product.html"><img src="img/catalog__img7.jpg" alt="photo product" class="product__img"></a>
+                <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
+                <div class="product__info">
+                    <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <div class="product__price">$52.00</div>
+                </div>
+            </div>
+            <div class="product product_mb">
+                <a href="product.html"><img src="img/catalog__img8.jpg" alt="photo product" class="product__img"></a>
+                <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
+                <div class="product__info">
+                    <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
+                    <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <div class="product__price">$52.00</div>
+                </div>
+            </div>
+            <div class="product product_mb product_last">
+                <a href="product.html"><img src="img/catalog__img9.jpg" alt="photo product" class="product__img"></a>
                 <a href="cart.html" class="product__add"><img src="img/cart.svg" alt="cart"> Add to Cart</a>
                 <div class="product__info">
                     <a class="product__name" href="product.html">ELLERY X M'O CAPSULE</a>
@@ -174,7 +230,11 @@
                 </div>
             </div>
         </div>
-        <a href="product.html" class="product__button">Browse All Product</a>
+        <div class="pagination">
+            <a href="#"><img src="img/left.svg" alt="paginatation left"></a>
+            <p>1 2 3 4 5 ... 20</p>
+            <a href="#"><img src="img/right.svg" alt="pagination right"></a>
+        </div>
     </section>
 
     <footer class="footer">
@@ -224,7 +284,6 @@
             </div>
         </div>
     </footer>
-
 
 
 </body>
