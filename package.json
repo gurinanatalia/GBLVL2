@@ -1,0 +1,23 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "geekbrains webserver",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gurinanatalia/GBLVL2.git"
+  },
+  "author": "NataliaGurina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurinanatalia/GBLVL2/issues"
+  },
+  "homepage": "https://github.com/gurinanatalia/GBLVL2#readme",
+  "dependencies": {
+    "open": "^7.4.1"
+  }
+}
