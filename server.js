@@ -3,9 +3,20 @@ const fs = require('fs');
 
 const server = http.createServer((req, res) => {
     console.log(req.url);
-    const body = req.url === '/sass/style.css' ?
-        fs.readFileSync('./public/sass/style.css', 'utf8') :
-        fs.readFileSync('./public/index.html', 'utf8');
+
+    let body = null;
+    try {
+        const ext = req.url.split('.')[1];
+        console.log(ext);
+        const isSvg = ext === 'svg';
+        if (isSvg) {
+            res.setHeader('Content-Type', 'image/svg+xml');
+        }
+        body = fs.readFileSync(`./public${req.url}`);
+    } catch (err) {
+        body = fs.readFileSync(`./public/index.html`);
+    }
+
     res.end(body);
 });
 
