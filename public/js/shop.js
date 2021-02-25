@@ -3,18 +3,19 @@ class ProductList {
         this.container = container;
         this._goods = [];
         this._allProducts = [];
-        this._fetchGoods();
-        this._render();
+        this._fetchGoods()
+            .then((data) => {
+                this._goods = Array.from(data);
+                this._render();
+;            });
+        
     }
     _fetchGoods() {
-        this._goods = [
-            { id: 1, name: "ELLERY X M'O CAPSULE", price: 52.00, img: '/img/products__img1.jpg', text: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.' },
-            { id: 2, name: "ELLERY X M'O CAPSULE", price: 52.00, img: '/img/products__img2.jpg', text: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.' },
-            { id: 3, name: "ELLERY X M'O CAPSULE", price: 52.00, img: '/img/products__img3.jpg', text: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.' },
-            { id: 4, name: "ELLERY X M'O CAPSULE", price: 52.00, img: '/img/products__img4.jpg', text: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.' },
-            { id: 5, name: "ELLERY X M'O CAPSULE", price: 52.00, img: '/img/products__img5.jpg', text: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.' },
-            { id: 6, name: "ELLERY X M'O CAPSULE", price: 52.00, img: '/img/products__img6.jpg', text: 'Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.' },
-        ]
+        return fetch('data.json')
+            .then(response => response.json())
+            .catch((err) => {
+                console.log('Error !!!');
+            });
     }
 
     _render() {
@@ -53,17 +54,17 @@ class ProductItem {
                     </div>`
     }
 
-    addToCart () {
+    // addToCart () {
 
-    }
+    // }
 }
 
 const productList = new ProductList();
 
-class CartList () {
+// class CartList () {
 
-}
+// }
 
 
-const addToCartButton = document.querySelectorAll('.product__add');
-addToCartButton.addEventListener('click', addToCart());
+// const addToCartButton = document.querySelectorAll('.product__add');
+// addToCartButton.addEventListener('click', addToCart());
