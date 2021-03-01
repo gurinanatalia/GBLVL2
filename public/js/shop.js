@@ -68,3 +68,4 @@ const productList = new ProductList();
 
 // const addToCartButton = document.querySelectorAll('.product__add');
 // addToCartButton.addEventListener('click', addToCart());
+

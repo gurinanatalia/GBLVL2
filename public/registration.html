@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <header class="header center">
         <div class="header__left">
             <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </header>
-    
+
     <section class="catalog__top center">
         <h2 class="catalog__top__heading">REGISTRATION </h2>
     </section>
@@ -72,18 +72,20 @@
     <main class="registration center">
         <form action="#" class="registration__form">
             <h5 class="registration__heading">Your Name</h5>
-            <input type="text" class="registration__input" placeholder="First Name" required autofocus>
-            <input type="text" class="registration__input" placeholder="Last Name" required>
+            <input type="text" class="registration__input name" placeholder="First Name" required autofocus>
+            <input type="text" class="registration__input lastname" placeholder="Last Name" required>
+            <input type="tel" class="registration__input tel" placeholder="Telephone" required>
             <div class="registration__radio">
                 <input type="radio" class="registration__input" id="gender_male" name="gender" checked required>
-                <label for="gender_male" class="registration__text">Male</label>                
+                <label for="gender_male" class="registration__text">Male</label>
                 <input type="radio" class="registration__input" id="gender_female" name="gender" required>
-                <label for="gender_female" class="registration__text">Female</label>              
+                <label for="gender_female" class="registration__text">Female</label>
             </div>
             <h5 class="registration__heading">Login details</h5>
-            <input type="email" class="registration__input" placeholder="Email" required>
+            <input type="email" class="registration__input email" placeholder="Email" required>
             <input type="password" class="registration__input" placeholder="Password" required>
-            <p class="registration__text_pass">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <p class="registration__text_pass">Please use 8 or more characters, with at least 1 number and a mixture of
+                uppercase and lowercase letters</p>
             <button type="submit" class="registration__button">
                 JOIN NOW
                 <i class="fas fa-arrow-right"></i>
@@ -92,7 +94,8 @@
 
         <div class="loyalty">
             <h4 class="loyalty__heading">LOYALTY HAS ITS PERKS</h4>
-            <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+                Starting with these as soon as you join:</p>
             <ul class="loyalty__ul">
                 <li class="loyalty__list">&#10003; 15% off welcome offer</li>
                 <li class="loyalty__list">&#10003; Free shipping, returns and exchanges on all orders</li>
@@ -103,7 +106,7 @@
 
         </div>
     </main>
-    
+
 
 
     <footer class="footer">
@@ -135,7 +138,7 @@
         </div>
     </footer>
 
-  
+    <script src="./js/registration.js"></script>
 
 </body>
 
